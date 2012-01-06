@@ -1,0 +1,18 @@
+Config:
+  getArmor:
+    Default: iron
+    Prices:
+      leather: 100
+      chain: 300
+      iron: 200
+      gold: 350
+      diamond: 400
+    Commands:
+      getarmor: true
+      getArmor:
+        lether: true
+        chain: true
+        iron: true
+        gold: true
+        diamond: true
+        

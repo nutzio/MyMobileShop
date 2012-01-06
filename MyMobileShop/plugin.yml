@@ -1,0 +1,64 @@
+name: MyMobileShop
+version: 1.0b
+author: nutzio
+main: me.nutzio.myMobileShop.MyMobileShop
+description: TUT
+website: https://github.com/nutzio
+depend: [Permissions]
+
+permission:
+  MyMobileShop.armor.*:
+    description: Gives access to all MyMobileShop armor commands
+    children:
+      MyMobileShop.armor.getarmor.leather: true
+      MyMobileShop.armor.getarmor.chain: true
+      MyMobileShop.armor.getarmor.iron: true
+      MyMobileShop.armor.getarmor.gold: true
+      MyMobileShop.armor.getarmor.diamond: true
+  MyMobileShop.armor.getArmor.leather:
+    description: Gives you a leather armor
+  MyMobileShop.armor.getArmor.chain:
+    description: Gives you a chain armor
+  MyMobileShop.armor.getArmor.iron:
+    description: Gives you a iron armor
+  MyMobileShop.armor.getArmor.gold:
+    description: Gives you a gold armor
+  MyMobileShop.armor.getArmor.diamond:
+    description: Gives you a diamond armor
+############
+##  Free  ##
+############
+  MyMobileShop.armor.getFree.*:
+    description: Get free the armor
+    children:
+    MyMobileShop.armor.getFree.leather: true
+    MyMobileShop.armor.getFree.chain: true
+    MyMobileShop.armor.getFree.iron: true
+    MyMobileShop.armor.getFree.gold: true
+    MyMobileShop.armor.getFree.diamond: true
+  MyMobileShop.getFree.leather:
+    description: Gives you a leather armor
+  MyMobileShop.getFree.chain:
+    description: Gives you a chain armor
+  MyMobileShop.getFree.iron:
+    description: Gives you a iron armor
+  MyMobileShop.getFree.gold:
+    description: Gives you a gold armor
+  MyMobileShop.getFree.diamond:
+    description: Gives you a diamond armor
+
+commands:
+  getarmor:
+    description: /getarmor leather|chain|iron|gold|diamond
+    aliases: [ga, geta, garmor]
+    usage: |
+      /getarmor leather|chain|iron|gold|diamond
+      /<command> [type]
+      Example: /<command> - gives you a Iron Armor
+      Example: /<command> diamond - gives you a Diamond Armor
+  myreload:
+    description: /myreload reloads the config.yml of MyMobileShop
+    usage: |
+      /myreload reloads the config.yml of MyMobileShop
+  
+  
